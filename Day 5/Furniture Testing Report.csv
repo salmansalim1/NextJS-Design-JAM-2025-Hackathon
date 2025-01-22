@@ -1,0 +1,23 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Validate furniture product listing page functionality,"1. Open homepage
+2. Navigate to 'Furniture' category",Product listings are displayed correctly,Listings displayed as expected,Passed,Medium,QA Team,None
+TC002,Test product filtering by price range,"1. Select a price range filter
+2. Verify displayed products",Only products within the selected range are displayed,Filter works correctly,Passed,Low,QA Team,None
+TC003,"Verify cart operations (add, update, remove)","1. Add a product to cart
+2. Update quantity
+3. Remove product",Cart updates accordingly,Cart functions as expected,Passed,High,QA Team,None
+TC004,Test checkout process with invalid card details,"1. Add a product to cart
+2. Proceed to checkout
+3. Enter invalid card details",Error message: 'Invalid payment details',Error displayed as expected,Passed,High,QA Team,None
+TC005,Handle API timeout on product detail page,"1. Simulate API timeout
+2. Access product detail page",Error message: 'Unable to fetch product details',Fallback UI displayed,Passed,High,QA Team,Handled as per design
+TC006,Ensure responsiveness across devices,"1. Open the site on different devices
+2. Navigate through all pages",Site layout adjusts properly,Responsive design verified,Passed,Low,QA Team,Tested on multiple devices
+TC007,Check cross-browser compatibility,"1. Open site on Chrome, Firefox, Safari, Edge
+2. Test navigation",Consistent experience across all browsers,Rendering is consistent,Passed,Low,QA Team,None
+TC008,Validate security for input fields (SQL injection),"1. Input malicious script in search bar
+2. Observe behavior",Input is sanitized and rejected,Sanitization verified,Passed,Critical,Security Team,Ensure best practices maintained
+TC009,Optimize furniture image loading (performance test),"1. Load product pages
+2. Measure image loading time",Images load under 2 seconds,Images optimized,Passed,Medium,Performance Team,Used compression tools
+TC010,Verify user feedback mechanism,"1. Submit a review for a furniture item
+2. Check display",Review is posted and displayed correctly,Feedback functionality verified,Passed,Low,QA Team,None
